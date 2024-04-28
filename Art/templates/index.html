@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Art Auction</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+<link rel="icon" type="image/icon" href="{% static 'artDataset/png-transparent-auction-gavel-icon-auction-angle-internet-hammer-thumbnail.png' %}">
+
+<!-- Code for font awesome cdn -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+<!-- Code for linking css file -->
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+
+<!-- header section -->
+<header class="header">
+    <a href="#" class="logo"> <i class="fa fa-camera" aria-hidden="true"></i> Art Auction</a>
+
+
+<nav class="navbar">
+    <a href="#HOME">HOME</a>
+    <a href="#PAINTINGS">PAINTINGS</a>
+    <a href="#SCULPTURES">SCULPTURE</a>
+    <a href ="#ENGRAVINGS">ENGRAVINGS</a>
+    <a href="#FUTUREAUCTION">FUTURE AUCTION</a>
+    <a href="#WINNERS">WINNERS</a>
+</nav>
+
+
+<div class="icons">
+    <div class="fa fa-bars" id="menu-btn"></div>
+    <div class="fa fa-search" id="search-btn"></div>
+    <div class="fa fa-user" id="login-btn"></div>
+</div>
+
+<form class="search-form">
+    <input type="search" id="search-box" placeholder="Search Here....">
+        <label for="search-box" class="fa fa-search"></label>
+</form>
+
+
+<form action="#" class ="login-form">
+    <h3>login now</h3>
+    <input type="email" placeholder="enter your email" class="box">
+    <input type="password" placeholder="your password" class="box">
+
+<p>Forget Your Password <a href="#">Click Here</a></p>
+<p>Don't Have An Account <a href="#">Create Now</a></p>
+
+
+    <input type="submit" value="Login Now" class="btn">
+
+</form>
+
+</header>
+
+<!-- auction page -->
+<section class="home" id="home" style="background-image: url('{% static 'artDataset/Image.jpg' %}');">
+    <div class="content">
+        <h3>Online Live Auction</h3>
+        
+    </div>
+</section>
+<!-- auction page -->
+
+<!-- Time Frame Section -->
+<section class="TIME" id="TIME">
+    <div class="timer"></div>
+</section>
+<!-- Time Frame Section -->
+
+<!-- Paintings Section -->
+<section class="PAINTINGS" id="PAINTINGS">
+    <h1 class="heading"><span>PAINTINGS</span> </h1>
+
+    <div class="box-container">
+        <div class="box">
+            <img src="{% static 'artDataset/image_76.png' %}" alt="Image 76">
+            <h3>Artist: George Pearse Ennis</h3>
+            <h4>Price: $1000</h4>
+            <h5 class="current-bid">Current Bid: $1000</h5>
+
+            <a href="#" class="btn">Bid</a>
+            <a href="#" class="btn cancel-btn">Cancel</a>
+        </div>
+
+                <div class="box">
+            <img src="{% static 'artDataset/image_77.png' %}" alt="Image 77">
+            <h3>Artist: Doris McCarthy</h3>
+            <h4>Price: $6000</h4>
+            <h5 class="current-bid">Current Bid: $7000</h5>
+
+            <a href="#" class="btn">Bid</a>
+            <a href="#" class="btn cancel-btn">Cancel</a>
+        </div>
+
+                <div class="box">
+            <img src="{% static 'artDataset/image_735.png' %}" alt="Image 735">
+            <h3>Arist: T. L. Solien</h3>
+            <h4>Price: $7000</h4>
+            <h5 class="current-bid">Current Bid: $8500</h5>
+
+            <a href="#" class="btn">Bid</a>
+            <a href="#" class="btn cancel-btn">Cancel</a>
+        </div>
+    </div>
+</section>
+<!-- Paintings Section -->
+
+
+
+
+<!-- Sculpture Section -->
+<section class="SCULPTURES" id="SCULPTURES">
+    <h1 class="heading"><span>SCULPTURES</span></h1>
+
+        <div class="wrappers">
+            <div class="box">
+                <img src="{% static 'sculpture/2.jpg' %}" alt="Sculpture Image">
+                <h3>Artist: Ron Davis</h3>
+                <h4>Price: $1500</h4>
+                <h5 class="current-bid">Current Bid: $2700</h5>
+
+                <a href="#" class="btn">Bid</a>
+                <a href="#" class="btn cancel-btn">Cancel</a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'sculpture/7.jpg' %}" alt="Sculpture Image">
+                <h3>Artist: Stuart Nielsen</h3>
+                <h4>Price: $1500</h4>
+                <h5 class="current-bid">Current Bid: $3000</h5>
+
+                <a href="#" class="btn">Bid</a>
+                <a href="#" class="btn cancel-btn">Cancel</a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'sculpture/18.jpg' %}" alt="Sculpture Image">
+                <h3>Artist: Ford Crull</h3>
+                <h4>Price: $1500</h4>
+                <h5 class="current-bid">Current Bid: $1750</h5>
+
+                <a href="#" class="btn">Bid</a>
+                <a href="#" class="btn cancel-btn">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- Sculpture Section -->
+
+
+<!-- Engravings Section -->
+<section class="ENGRAVINGS" id="ENGRAVINGS">
+    <h1 class="heading"><span>ENGRAVINGS</span></h1>
+
+        <div class="packet">
+            <div class="box">
+                <img src="{% static 'engraving/10.jpg' %}" alt="Engraving Image">
+                <h3>Artist: Paul Henry Ramirez</h3>
+                <h4>Price: $2000</h4>
+                <h5 class="current-bid">Current Bid: $4000</h5>
+
+                <a href="#" class="btn">Bid</a>
+                <a href="#" class="btn cancel-btn">Cancel</a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'engraving/25.jpg' %}" alt="Engraving Image">
+                <h3>Artist: MICHAEL MAZUR </h3>
+                <h4>Price: $4500</h4>
+                <h5 class="current-bid">Current Bid: $5000</h5>
+
+                <a href="#" class="btn">Bid</a>
+                <a href="#" class="btn cancel-btn">Cancel</a>
+            </div>
+
+            <div class="box">
+                <img src="{% static 'engraving/30.jpg' %}" alt="Engraving Image">
+                <h3>Artist: Lizbeth Mitty</h3>
+                <h4>Price: $5000</h4>
+                <h5 class="current-bid">Current Bid: $6750</h5>
+
+                <a href="#" class="btn">Bid</a>
+                <a href="#" class="btn cancel-btn">Cancel</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+<!-- Engravings Section -->
+
+
+<!-- Future Auction Section -->
+
+<section class="FUTUREAUCTION" id="FUTUREAUCTION">
+    <h1 class="heading"><span>FUTURE AUCTION</span></h1>
+
+    <div class="box-container">
+        <div class="box" id="futureItem1" data-end-time="2024-04-12T12:00:00" data-section-id="PAINTINGS">
+            <img src="{% static 'artDataset/image_164.png' %}" alt="Paintings Image">
+            <h3>Artist: Donald Sultan</h3>
+            <h4>Price: $5000</h4>
+            <h5>Current Bid: $6500</h5>
+            <div class="content">
+                <div class="icons">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+                <div class="timer"></div> 
+            </div>
+        </div>
+
+        <div class="box" id="futureItem2" data-end-time="2024-04-12T12:00:00" data-section-id="SCULPTURES">
+            <img src="{% static 'sculpture/215.jpg' %}" alt="Sculpture Image">
+            <h3>Artist: June Redfern</h3>
+            <h4>Price: $4500</h4>
+            <h5>Current Bid: $6500</h5>
+            <div class="content">
+                <div class="icons">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+                <div class="timer"></div> 
+            </div>
+        </div>
+
+        <div class="box" id="futureItem3" data-end-time="2024-04-12T12:00:00" data-section-id="ENGRAVINGS">
+            <img src="{% static 'engraving/i - 143.jpeg' %}" alt="Engraving Image">
+            <h3>Artist: Paul Davis</h3>
+            <h4>Price: $4500</h4>
+            <h5>Current Bid: $6500</h5>
+            <div class="content">
+                <div class="icons">
+                    <i class="fa fa-clock-o"></i>
+                </div>
+                <div class="timer"></div> 
+            </div>
+        </div>
+    </div>
+</section>
+       
+<!-- Future Auction Section -->
+
+<!-- Winners Section -->
+<section class="WINNERS" id="WINNERS">
+    <h1 class="heading"><span>WINNERS</span></h1>
+    <div class="winner">
+        <h1>Winner Name 1</h1>
+        <p>Description of the award or winning artwork.</p>
+    </div>
+    <div class="winner">
+        <h1>Winner Name 2</h1>
+        <p>Description of the award or winning artwork.</p>
+    </div>
+    <div class="winner">
+        <h1>Winner Name 3</h1>
+        <p>Description of the award or winning artwork.</p>
+    </div>
+    <div class="winner">
+        <h1>Winner Name 4</h1>
+        <p>Description of the award or winning artwork.</p>
+    </div>
+    <div class="winner">
+        <h1>Winner Name 5</h1>
+        <p>Description of the award or winning artwork.</p>
+    </div>
+    <div class="winner">
+        <h1>Winner Name 6</h1>
+        <p>Description of the award or winning artwork.</p>
+    </div>
+    
+</section>
+
+<!-- Winners Section -->
+
+
+<!-- Footer Section -->
+<section class="footer">
+    <div class="box-container">
+        <div class="box">
+            <h2> Art <i class="fa fa-camera"></i></h2>
+            <p>Feel Free To Follow Us On Our Social Media Handlers All The Links Are Given Below.</p>
+
+            <div class="share">
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2> Contact Info </h2>
+            <a href="#" class="links"> <i class="fa fa-phone"></i> +91 981018408
+            </a>
+            <a href="#" class="links"> <i class="fa fa-phone"></i> +91 9811663508
+            </a>
+            <a href="#" class="links"> <i class="fa fa-envelope"></i> info@chinmay.com
+            </a>
+            <a href="#" class="links"> <i class="fa fa-map-marker"></i> Jaipur,India
+            </a>
+            
+        </div>
+
+        <div class="box">
+            <h2> Quick Links </h2>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Home
+            </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Paintings
+            </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Sculpture
+            </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Engravings
+            </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Future Auction
+            </a>
+            <a href="#" class="links"> <i class="fa fa-arrow-right"></i> Winners
+            </a>
+        </div>
+
+
+        <div class="box">
+            <h2> Newsletter </h2>
+            <p> Subscribe For Latest Updates</p>
+            <input type="email" placeholder="Your Email" class="email">
+            <input type="submit" value="Subscribe" class="btn">
+            <img src="{% static 'artDataset/Pay.jpg' %}" class="paytm">
+        </div>
+    </div>
+</section>
+
+
+<!-- Footer Section -->
+
+<script src="{% static 'js/script.js' %}"></script>
+
+</body>
+</html>
